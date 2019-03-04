@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #dadada;
+}
+
+h1, h2, h3 {
+  font-weight: inherit;
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #a49fad;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #151515;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #6441a4;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+}
+button span {
+  padding: .4rem .8rem;
+  position: relative;
+  text-align: center;
+}
+
+button:hover {
+  text-decoration: none;
+  background: #7d5bbe;
+  border-color: #7d5bbe;
+  color: #fff;
+}
+
+button:focus {
+  text-decoration: none;
+  background: #7d5bbe;
+  border-color: #9a7fcc;
+  box-shadow: 0 0 6px 0 #7d5bbe;
+  color: #fff;
+}
+
+button:active {
+  text-decoration: none;
+  background: #6441a4;
+  border-color: #7d5bbe;
+  box-shadow: 0 0 6px 0 #7d5bbe;
+  color: #fff;
+}
+
+#Twitch {
+  flex: auto;
+}
+#Twitch #twitch-embed {
+  height: 100%;
+}
+
+#Emote_Only_Mode {
+  display: flex;
+  min-height: 240px;
+  background-color: #0f0e11;
+  border-top: 1px solid #2a2a2a;
+}
+#Emote_Only_Mode #pane_left {
+  padding: 20px calc(1rem + 5px);
+}
+#Emote_Only_Mode .pane {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#Emote_Only_Mode .pane .pane_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 10px;
+}
+#Emote_Only_Mode .pane .pane_body {
+  flex: auto;
+}
+#Emote_Only_Mode .pane #d3 {
+  width: 100%;
+  height: 100%;
+  fill: #6441a4;
+  overflow-y: visible;
+  z-index: 10;
+}
+#Emote_Only_Mode .pane #d3 .overlay {
+  fill: none;
+  pointer-events: all;
+  z-index: 100;
+  overflow: visible;
+}
+#Emote_Only_Mode .pane #d3 circle {
+  fill: #dadada;
+}
+#Emote_Only_Mode .pane #d3 text {
+  fill: #dadada;
+}
+#Emote_Only_Mode .pane #d3 .y {
+  color: transparent;
+}
+#Emote_Only_Mode .pane #d3 .x {
+  color: #dadada;
+}
+#Emote_Only_Mode .pane #d3 .tick {
+  color: transparent;
+}
+#Emote_Only_Mode .pane #words {
+  display: flex;
+  flex-direction: column;
+}
+#Emote_Only_Mode .pane #words #words_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+#Emote_Only_Mode .pane #words #words_list .word_entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Emote_Only_Mode .pane #words #words_list .word_entry .word_count {
+  font-size: 1.2rem;
+  color: #a49fad;
+}
+#Emote_Only_Mode .pane #filters {
+  display: flex;
+  flex-direction: column;
+}
+#Emote_Only_Mode #pane_left {
+  flex: auto;
+}
+#Emote_Only_Mode #pane_right {
+  width: 340px;
+  border-left: 1px solid #2a2a2a;
+}
+#Emote_Only_Mode #pane_right #words {
+  height: 100%;
+}
+#Emote_Only_Mode #pane_right #filters {
+  display: none;
+  height: 100%;
+}

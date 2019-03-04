@@ -1,0 +1,28 @@
+{
+    "name": "Emotes Only Mode",
+    "version": "1.0",
+    "description": "Emote Visualization for Twitch",
+    "permissions": [
+        "storage",
+        "tabs",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+    },
+    "content_scripts": [
+    {
+        "matches" : ["<all_urls>"],
+        "js": [
+            "content.js",
+            "lib/twitch_embed_v1.js",
+            "lib/d3.v5.min.js"
+        ],
+        "all_frames": true
+    }
+    ],
+    "manifest_version": 2
+  }
