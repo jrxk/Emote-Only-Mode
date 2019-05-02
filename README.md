@@ -1,5 +1,5 @@
 # Emote Only Mode
-A Chrome extension that visualizes chat emotes activity of a Twitch VOD.
+A Chrome extension that visualizes chat emotes activity of Twitch VODs.
 
 ### Features:
 * Find stream highlights in long stream VODs
@@ -7,10 +7,9 @@ A Chrome extension that visualizes chat emotes activity of a Twitch VOD.
 * Emote filters: find Pog/LUL/Kappa moments!
 
 ### To install:
-1. Unzip the file
-2. In Chrome, navigate to to chrome://extensions
-3. Enable Developer Mode (located on the top right)
-4. Drag the unzipped folder to the extension page
+1. In Chrome, navigate to to chrome://extensions
+2. Enable Developer Mode (located on the top right)
+3. Drag the folder to the extension page
 
 ### To run:
 1. Go to a Twitch VOD page
