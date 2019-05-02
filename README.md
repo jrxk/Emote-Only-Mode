@@ -13,6 +13,6 @@ A Chrome extension that visualizes chat emotes activity of a Twitch VOD.
 4. Drag the unzipped folder to the extension page
 
 ### To run:
-1. Go to a twitch VOD page
+1. Go to a Twitch VOD page
 2. Click on the Emote Only Mode Chrome extension icon located on the top right of the window.
 3. A pane should appear below the video player. Please be patient as loading chat data can be slow.
