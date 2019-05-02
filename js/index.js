@@ -1,11 +1,5 @@
-var embed = new Twitch.Embed("twitch-embed", {
-	width: "100%",
-	height: "100%",
-	video: "359025333"
-});
-
 // Right pane view change code.
-var words = document.getElementById("words");
+/*var words = document.getElementById("words");
 var filters = document.getElementById("filters");
 
 var tofilters_button = document.getElementById("tofilters_button");
@@ -17,7 +11,7 @@ var towords_button = document.getElementById("towords_button");
 towords_button.onclick = function() {
 	filters.style.display = "none";
 	words.style.display = "flex";
-}
+}/*
 
 /*
 	Write additional code below here.
@@ -40,7 +34,7 @@ towords_button.onclick = function() {
 var d3_width = document.getElementById("d3").getBoundingClientRect().width;
 var d3_height = document.getElementById("d3").getBoundingClientRect().height;
 // Check your console. Should be some width and a height of probably 170 px. This is just debug code so remove it later
-console.log(d3_width + ", " + d3_height);
+//console.log(d3_width + ", " + d3_height);
 
 var comment_data;
 var emote_data;
@@ -93,6 +87,7 @@ xAxis.tickFormat(formatTime);
 	
 yAxis.tickFormat(d3.format("d"));
 
+console.log(height);
 var area = d3.area()
 	.x(function(d) { return x(d.content_offset_seconds); })
 	.y0(height)
@@ -112,7 +107,7 @@ var svg = d3.select("svg#d3")
 
 svg.append("path")
         .datum(comment_data)
-        .attr("class", "area")
+        //.attr("class", "area")
         .attr("d", area);
 
 svg.append("g")
@@ -125,7 +120,7 @@ svg.append("g")
 		.attr("transform", "translate(0 ,0)")
         .call(yAxis);
 
-var focus = svg.append("g")
+/*var focus = svg.append("g")
 	.attr("class", "focus")
 	.style("display", "none");
     
@@ -208,7 +203,7 @@ svg.append("rect")
 				}
 			}
 		}
-		//console.log(total);
+		console.log(total);
 		focus.attr("transform", "translate(" + x(comment_data[index].content_offset_seconds) + "," + y(total) + ")");
 		focus.select("#emote1").attr("xlink:href", emotes[0]);
 		focus.select("#emoteCount1").text(emote_count[0]);
@@ -236,8 +231,8 @@ svg.append("rect")
 		}
 		embed.player.seek(comment_data[index].content_offset_seconds);
 	
-	
-		var words = ["", "", "", "", ""];
+	*/
+		/*var words = ["", "", "", "", ""];
 		var word_count = [0, 0, 0, 0, 0];
 		for (var i = 0; i < 5; i++) {
 			for (var key in comment_data[index].words) {
@@ -258,5 +253,5 @@ svg.append("rect")
 		document.getElementById("word_3_count").innerHTML = word_count[2];
 		document.getElementById("word_4_count").innerHTML = word_count[3];
 		document.getElementById("word_5_count").innerHTML = word_count[4];
-	});
+	});*/
 }

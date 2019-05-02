@@ -5,22 +5,28 @@
     "permissions": [
         "storage",
         "tabs",
-        "<all_urls>"
+        "webNavigation",
+        "*://www.twitch.tv/videos/*",
+        "*://twitchemotes.com/*"
     ],
     "background": {
-        "scripts": ["background.js"],
+        "scripts": [
+            "js/bundle.js",
+            "js/twitch_api_client.js",
+            "background.js"
+        ],
         "persistent": false
     },
     "browser_action": {
     },
     "content_scripts": [
     {
-        "matches" : ["<all_urls>"],
+        "matches" : ["*://www.twitch.tv/videos/*"],
         "js": [
             "content.js",
-            "lib/twitch_embed_v1.js",
             "lib/d3.v5.min.js"
         ],
+        "css": ["css/style.css"],
         "all_frames": true
     }
     ],
