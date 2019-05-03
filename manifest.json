@@ -30,5 +30,10 @@
         "all_frames": true
     }
     ],
+    "icons": {
+        "16": "./asset/16.png",
+        "48": "./asset/48.png",
+        "128": "./asset/128.png"
+    },
     "manifest_version": 2
   }
