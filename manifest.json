@@ -1,6 +1,6 @@
 {
     "name": "Emotes Only Mode",
-    "version": "1.0",
+    "version": "0.1",
     "description": "Emote Visualization for Twitch",
     "permissions": [
         "storage",
